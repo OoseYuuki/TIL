@@ -109,6 +109,6 @@ def get_user_orders_with_outer_join(session: Session):
 
 
 ## 参考資料
-[[Python] SQLAlchemyを頑張って高速化](https://qiita.com/yukiB/items/d6a70da802cb5731dc01)<br />
-[公式ドキュメント](https://www.sqlalchemy.org/)<br />
-[2.0 Migration - ORM Usage](https://docs.sqlalchemy.org/en/20/changelog/migration_20.html#migration-20-query-usage)<br />
+- [[Python] SQLAlchemyを頑張って高速化](https://qiita.com/yukiB/items/d6a70da802cb5731dc01)
+- [公式ドキュメント](https://www.sqlalchemy.org/)
+- [2.0 Migration - ORM Usage](https://docs.sqlalchemy.org/en/20/changelog/migration_20.html#migration-20-query-usage)

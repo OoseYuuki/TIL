@@ -124,4 +124,35 @@ async def create_items(items: List[int]):
 
 ```
 
+## `Union`について
+複数の異なる型を許容するために使用されるジェネリクス型の一つである。<br />
+つまり、`Union`を使うことで指定した型の中からいずれか一つが受け入れられるようになる。<br />
+これは特に、APIの入力データやデータモデルのフィールドにおいて、複数の可能なデータ型を表現する際に役立つ。<br />
+
+
+`Union`は`typing`モジュールからインポートされる。以下実装例。<br />
+
+```python
+from pydantic import BaseModel
+from typing import Union
+
+class Item(BaseModel):
+    value: Union[int, float, str]
+
+# Itemクラスのインスタンスを作成
+item1 = Item(value=42)
+item2 = Item(value=3.14)
+item3 = Item(value="Hello")
+
+print(item1)  # 出力: Item value=42
+print(item2)  # 出力: Item value=3.14
+print(item3)  # 出力: Item value='Hello'
+
+```
+上記の例では、`Item`クラス内の`value`フィールドに`Union[int, float, str]`という型ヒントを設定。<br />
+従って、`value`フィールドは整数、浮動小数点数、文字列のいずれかの型の値を受け入れる。<br />
+
+
+`Union`を使用することで、複数の異なるデータ型を許容する柔軟なデータモデルを作成できる。<br />
+
 ## 参考資料
