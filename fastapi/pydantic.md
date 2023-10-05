@@ -106,6 +106,22 @@ print(person2)  # 出力: Person name='Bob' age=None
 
 ```
 
+## `List`について
+`typing`モジュールからインポートされる、ジェネリクス型の一つ。<br />
+FastAPIでは、`List`を使用してリスト内の要素の型を指定できる。<br />
+主に型ヒントとして使用され、リスト内の要素が特定の型であることを示すのに役立つ。<br />
+`list`ではなく、Pydanticの型定義に際しては`List`を使うようにすること。<br />
+
+```python
+from fastapi import FastAPI
+from typing import List
+
+app = FastAPI()
+
+@app.post("/items/")
+async def create_items(items: List[int]):
+    return {"received_items": items}
+
+```
 
 ## 参考資料
-[]()

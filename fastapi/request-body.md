@@ -126,7 +126,7 @@ Pythonの型宣言で、FastAPIは以下のことを行う。<br />
 
 
 ## SwaggerUI
-以下のようにSchemasの内容揉みれるようになっている。<br />
+以下のようにSchemasの内容も見れるようになっている。<br />
 
 [![Image from Gyazo](https://i.gyazo.com/ab00fccf8dd9d6fa9740957b81e1196d.png)](https://gyazo.com/ab00fccf8dd9d6fa9740957b81e1196d)<br />
 
